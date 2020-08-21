@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hero Database</string>
+    <string name="hero_item">Hero Image</string>
+</resources>
