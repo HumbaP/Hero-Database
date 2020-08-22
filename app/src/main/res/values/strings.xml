@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Hero Database</string>
     <string name="hero_item">Hero Image</string>
+    <string name="hero_auth_code">10156112965520834</string>
+    <string name="hero_base_api_url">https://www.superheroapi.com/api.php/</string>
 </resources>
