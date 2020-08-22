@@ -12,6 +12,6 @@ public interface HeroAPI {
     @GET("{id}")
     Call<SuperHero> getHeroFromId(@Path("id") String id);
     @GET("search/{name}")
-    Call<BaseHeroAPIResponse> searchHero(@Path("name") String name);
+    Call<HeroAPIResponse> searchHero(@Path("name") String name);
 }
 

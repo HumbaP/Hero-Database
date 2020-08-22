@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".HeroDetail" >
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hero_alignment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <ImageView
         android:id="@+id/hero_detail_image"
         android:layout_width="wrap_content"
@@ -22,11 +33,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/hero_detail_image"
-        tools:layout_editor_absoluteX="180dp" />
+        app:layout_constraintEnd_toEndOf="@+id/hero_detail_image"
+        app:layout_constraintStart_toStartOf="@+id/hero_detail_image"
+        app:layout_constraintTop_toBottomOf="@+id/hero_detail_image" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
@@ -44,7 +56,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:text="TextView"
             app:layout_constraintBottom_toBottomOf="@+id/imageView4"
             app:layout_constraintStart_toEndOf="@+id/imageView4"
             app:layout_constraintTop_toTopOf="@+id/imageView4" />
@@ -75,7 +86,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:text="TextView"
             app:layout_constraintBottom_toBottomOf="@+id/imageView6"
             app:layout_constraintStart_toEndOf="@+id/imageView6"
             app:layout_constraintTop_toTopOf="@+id/imageView6" />
@@ -96,7 +106,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:text="TextView"
             app:layout_constraintBottom_toBottomOf="@+id/imageView7"
             app:layout_constraintStart_toEndOf="@+id/imageView7"
             app:layout_constraintTop_toTopOf="@+id/imageView7" />
@@ -117,7 +126,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:text="TextView"
             app:layout_constraintBottom_toBottomOf="@+id/imageView8"
             app:layout_constraintStart_toEndOf="@+id/imageView8"
             app:layout_constraintTop_toTopOf="@+id/imageView8" />
@@ -134,12 +142,11 @@
             app:srcCompat="@drawable/power" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/power"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:text="TextView"
             app:layout_constraintBottom_toBottomOf="@+id/imageView9"
             app:layout_constraintStart_toEndOf="@+id/imageView9"
             app:layout_constraintTop_toTopOf="@+id/imageView9" />
@@ -160,19 +167,17 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:text="TextView"
             app:layout_constraintBottom_toBottomOf="@+id/imageView10"
             app:layout_constraintStart_toEndOf="@+id/imageView10"
             app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
         <TextView
-            android:id="@+id/detail_hero_name"
+            android:id="@+id/detail_hero_full_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="32dp"
-            android:text="FLASH"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -183,9 +188,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="DC COMICS"
-            app:layout_constraintStart_toStartOf="@+id/detail_hero_name"
-            app:layout_constraintTop_toBottomOf="@+id/detail_hero_name" />
+            app:layout_constraintStart_toStartOf="@+id/detail_hero_full_name"
+            app:layout_constraintTop_toBottomOf="@+id/detail_hero_full_name" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
