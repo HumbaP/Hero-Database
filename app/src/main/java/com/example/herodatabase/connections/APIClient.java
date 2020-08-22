@@ -8,8 +8,8 @@ public class APIClient {
 
     private static Retrofit client = null;
 
-    private static Retrofit getClient(String server){
-        if(client == null){
+    public static Retrofit getClient(String server){
+        if(client == null || !client.baseUrl().equals(server)){
             client = new Retrofit.Builder()
                     .baseUrl(server)
                     .addConverterFactory(GsonConverterFactory.create())
